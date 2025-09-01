@@ -1,4 +1,4 @@
-# Dynamic Introduction in Python
+# Dynamic Introduction With Python
 * This project includes two Python scripts that generate a **typing animation effect** in the console. By cycling through printable ASCII characters until each correct one is found, the text is revealed step by step. The result is a dynamic output that mimics real-time typing, making simple messages appear more engaging and interactive.
 ---
 ## Features
