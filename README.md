@@ -1,14 +1,11 @@
 # Dynamic Introduction in Python
 * This project includes two Python scripts that generate a **typing animation effect** in the console. By cycling through printable ASCII characters until each correct one is found, the text is revealed step by step. The result is a dynamic output that mimics real-time typing, making simple messages appear more engaging and interactive.
 ---
----
-
 ## Features
 - **Typing animation effect**: Gradually reveals any given string, simulating real-time typing.  
 - **Two script versions**:  
   - **`dynamic_introduction.py`** → Uses `sys.stdout.write()` to update text dynamically on the same line, creating a smooth flowing effect.  
   - **`dynamic_introduction_1.py`** → Uses `print()` to show progress line by line, giving a step-by-step display of the text being typed.  
-
 ---
 ## Files Included
 1. **`dynamic_introduction.py`**  
@@ -39,7 +36,9 @@
 1. The script defines the target text:
    ```python
    text = "Nice to meet you, I'm Kunal"
+
 2. It initializes an empty string (`temp`) to build the output progressively.
+
 3. For each character in `text`:
 
    * The script loops through **all printable characters** (`string.printable`).
@@ -48,7 +47,9 @@
      * The character is added to `temp`.
      * A short delay (`time.sleep(0.05)`) simulates typing.
    * Otherwise, the loop continues with a smaller delay (`time.sleep(0.001)`) to maintain the illusion of searching for the correct character.
+
 4. Adjustable speed using `time.sleep()` delays.
+
 5. Demonstrates the use of `string.printable` for character iteration.
 ---
 ## Running the Scripts
@@ -61,7 +62,7 @@
 2. Navigate into the folder:
 
    ```bash
-   cd /Dynamic-Introduction-with-Python
+   cd Dynamic-Introduction-with-Python
    ```
 3. Run the script:
 
